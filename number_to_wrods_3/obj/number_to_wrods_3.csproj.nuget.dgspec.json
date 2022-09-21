@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rohan.Zane-Bell\\source\\repos\\number_to_wrods_3\\number_to_wrods_3\\number_to_wrods_3.csproj": {}
+    "C:\\Users\\Rohan.Zane-Bell\\Documents\\GitHub\\num-to-words\\number_to_wrods_3\\number_to_wrods_3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rohan.Zane-Bell\\source\\repos\\number_to_wrods_3\\number_to_wrods_3\\number_to_wrods_3.csproj": {
+    "C:\\Users\\Rohan.Zane-Bell\\Documents\\GitHub\\num-to-words\\number_to_wrods_3\\number_to_wrods_3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rohan.Zane-Bell\\source\\repos\\number_to_wrods_3\\number_to_wrods_3\\number_to_wrods_3.csproj",
+        "projectUniqueName": "C:\\Users\\Rohan.Zane-Bell\\Documents\\GitHub\\num-to-words\\number_to_wrods_3\\number_to_wrods_3.csproj",
         "projectName": "number_to_wrods_3",
-        "projectPath": "C:\\Users\\Rohan.Zane-Bell\\source\\repos\\number_to_wrods_3\\number_to_wrods_3\\number_to_wrods_3.csproj",
+        "projectPath": "C:\\Users\\Rohan.Zane-Bell\\Documents\\GitHub\\num-to-words\\number_to_wrods_3\\number_to_wrods_3.csproj",
         "packagesPath": "C:\\Users\\Rohan.Zane-Bell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rohan.Zane-Bell\\source\\repos\\number_to_wrods_3\\number_to_wrods_3\\obj\\",
+        "outputPath": "C:\\Users\\Rohan.Zane-Bell\\Documents\\GitHub\\num-to-words\\number_to_wrods_3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rohan.Zane-Bell\\AppData\\Roaming\\NuGet\\NuGet.Config",
