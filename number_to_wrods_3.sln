@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "number_to_wrods_3", "number_to_wrods_3\number_to_wrods_3.csproj", "{389C2BBB-F3CE-4C99-AEF8-1C17B0E3F20B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{389C2BBB-F3CE-4C99-AEF8-1C17B0E3F20B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389C2BBB-F3CE-4C99-AEF8-1C17B0E3F20B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389C2BBB-F3CE-4C99-AEF8-1C17B0E3F20B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{389C2BBB-F3CE-4C99-AEF8-1C17B0E3F20B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72010BC8-14DC-446B-8E30-B20C469D999F}
+	EndGlobalSection
+EndGlobal
