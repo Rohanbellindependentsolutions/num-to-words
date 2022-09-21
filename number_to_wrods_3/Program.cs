@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace number_to_words_2
 {
@@ -17,7 +18,7 @@ namespace number_to_words_2
         {
             Console.WriteLine("Please Enter Your Designated Number:");
             int input = Convert.ToInt32(Console.ReadLine());
-            int answer, next, num_digits;
+            int answer, next, num_digits, digits_num, count = 0, count_num;
             int[] a = new int[10];
 
             // words for every digits from 0 to 9
@@ -35,36 +36,59 @@ namespace number_to_words_2
             "ten",
             "eleven",
             "twelve",
+            "twenty",
+            "thirty",
             "teen",
             "ty",
             "hundred",
             "thousand"
          };
 
-            // number to be converted into words
             answer = input;
-            Console.WriteLine("Number: " + answer);
-            Console.Write("Number (words): ");
-
-            next = 0;
-            num_digits = 0;
-
-            do
+            count_num = answer;
+            while (count_num > 0)
             {
-                next = answer % 10;
-                a[num_digits] = next;
-                num_digits++;
+                count_num = count_num / 10;
+                count++;
+            }
+            //Console.WriteLine("Number of digits is : " + count);
+            //Console.ReadLine();
+            while(count > 0)
+            {
+                if (count == 5)
+                {
+                    Console.Write(digits_words[answer / 1000] + " Ten Thousand ");
+                }
+                if (count == 4)
+                {
+                    Console.Write(digits_words[answer / 1000] + " Thousand ");
+                }
+
+                if (count == 3)
+                {
+                    Console.Write(digits_words[answer / 100] + " hundred ");
+                }
+                if (count == 2)
+                {
+                    if (answer / 10 < 4)
+                    {
+                        Console.Write(digits_words[answer/10 + 11] +'-');
+                    }
+                    else
+                    {
+                        Console.Write(digits_words[answer / 10] + "ty-");
+                    }
+                }
+                if (count == 1)
+                {
+                    Console.Write(digits_words[answer%10 + 1]);
+                }
+
+
                 answer = answer / 10;
-            } while (answer > 0);
+                count--;
+            }
 
-            num_digits--;
-
-            for (; num_digits >= 0; num_digits--)
-
-                    Console.Write(digits_words[a[num_digits]] + " ");
-                    Console.ReadLine();
-               
-            ;
         }
     }
 }
