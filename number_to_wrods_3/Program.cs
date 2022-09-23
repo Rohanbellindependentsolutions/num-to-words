@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Threading;
+using System.Transactions;
 
 namespace number_to_words_2
 {
@@ -67,6 +68,7 @@ namespace number_to_words_2
             bool hundred = false;
             bool teens = false;
             bool ones = false;
+            bool tens = false;
 
             if (count > 7 || answer < 0)
                 //Check if number is greater then a million and not negative
@@ -232,6 +234,7 @@ namespace number_to_words_2
                                                     //Number is from 20-99
                                                     Console.Write(digits_words[answer / 10 + 11] + "");
                                                     answer = answer % 10;
+                                                    tens = true;
                                                     
                                                 }
                                             }
@@ -285,9 +288,18 @@ namespace number_to_words_2
                                                     else
                                                     {
                                                         //Twenty and above or below 10
-                                                        Console.Write("-" + digits_words[answer] + "");
-                                                        answer = answer % 1;
-                                                        ones = true;
+                                                        if (tens)                                                    
+                                                        {
+                                                            //This means that there is something in the tens
+                                                            Console.Write("-" + digits_words[answer] + "");
+                                                        }
+                                                        else
+                                                        {
+                                                            //This means that there is a zero in the tens
+                                                            Console.Write(" and " + digits_words[answer] + "");
+                                                            answer = answer % 1;
+                                                            ones = true;
+                                                        }
                                                     }
                                                 }
                                             }
